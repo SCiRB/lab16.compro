@@ -17,3 +17,9 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int x = rand()%2;
+	if(x==0){int y = a; a = b; b = c; c = d; d = y;}
+	if(x==1){int y = b;int z = a; a = c; b = d; c = y; d = z;}
+}
